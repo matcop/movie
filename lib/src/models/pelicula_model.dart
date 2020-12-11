@@ -55,7 +55,7 @@ class Pelicula {
     originalLanguage = json['original_language'];
     originalTitle = json['original_title'];
     overview = json['overview'];
-    genreIds = json['genreIds'].cast<int>();
+    genreIds = json['genre_ids'].cast<int>();
     posterPath = json['poster_path'];
     releaseDate = json['release_date'];
     title = json['title'];
