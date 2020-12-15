@@ -1,6 +1,6 @@
+import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
 import 'package:peliculas/src/models/pelicula_model.dart';
 
 class PeliculasProvider {
@@ -15,7 +15,7 @@ class PeliculasProvider {
     final decodedData = json.decode(resp.body);
     final peliculas = new Peliculas.fromJsonList(decodedData['results']);
 
-    print(peliculas.items[2].title);
+    print(peliculas.items[3].title);
 
     return peliculas.items;
   }
